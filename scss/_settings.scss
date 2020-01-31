@@ -1,0 +1,81 @@
+
+
+// _settings.scss - Site settings styles 
+
+
+// -------------------
+//    Typography 
+// -------------------
+$base-font-size: 16px;
+$font-primary: 'Didact Gothic', sans-serif;
+$font-secondary: 'Cabin', sans-serif;
+$text-transform-base: uppercase;
+$baseline: $base-font-size * 1.5;
+
+// -------------------
+//    Colors Scheme 
+// -------------------
+
+
+// General
+
+$color-basic: #000000;
+$color-bg: #ecedf2;
+$color-headings: #514b68;
+$color-text-light: #b9b9b9;
+$color-background:  #ffffff;
+$color-footer_header: #00010f;
+$color-nav:  #838383c5;
+$color-elements: #8b8686;
+$color-btn-bg: $color-basic;
+
+// First color scheme
+
+$color-primary: #f4d248;
+$color-primary-rgb: rgb(244,210,72);
+
+$color-btn-text-primary: #f8e078;
+$color-btn-hover-primary: #ddc763;
+
+// Second color scheme
+
+$color-secondary: #e60404;
+$color-secondary-rgb: rgb(230, 4, 4);
+
+
+
+
+// Third color scheme
+
+$color-tertiary: #0080ff;
+$color-tertiary-rgb: rgb(0, 128, 255);
+$color-tertiary-transparent-rgb:  rgba(0, 128, 255, .3);
+
+
+$color-btn-text-tetrairy: #879cd6;
+$color-btn-hover-tetrairy: #696285;
+
+
+
+
+//Buttons
+
+
+
+// -------------------
+//       Spacing 
+// -------------------
+
+$margin-bottom-global: $baseline ;
+$margin-top-global: ($baseline * 2.5);
+$margin-right-left: ($baseline * 5);
+$margin-none: 0;
+$padding-none: 0;
+$padding-overall: ($baseline * 4);
+
+
+//--------------------
+//		Navigation
+//--------------------
+$font-weight-nav: 700;
+

@@ -1,0 +1,201 @@
+footer{
+    background-color: $color-footer_header;
+    color: $color-text-light;
+    font-size: $base-font-size;
+    font-family: $font-primary;
+
+    .flex{
+        padding: $margin-top-global*0.5 $margin-right-left;
+        display: flex;  
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+        h4{
+            font-weight: 700;
+            padding-bottom: $baseline;
+        }
+       .quotation{
+        flex-basis:40%;
+        h3{
+            font-size: $base-font-size*1.5;
+            color: $color-headings;
+        }
+        p{
+            padding-top: $baseline*0.5;
+        }
+       }
+        .adress{
+            flex-basis:20%;
+            i{
+                padding-right: $baseline*0.5;
+            }
+            span{
+                padding-left: $baseline*1.25;
+            }
+        }
+        .site{
+            flex-basis:20%;
+            ul{
+                list-style-type: none;
+                li{
+                    a{
+                    text-decoration: none;
+                    color: $color-text-light
+                    }
+                    a:hover{
+                    color: $color-headings;
+                  
+                    }
+                    a:focus{
+                        text-decoration: line-through;
+                    }
+                }
+            }
+        }
+        .follow{
+            flex-basis:20%;
+        
+            ul{
+          
+                list-style-type: none;
+                li{
+                    display: inline-block;
+                    padding: 0 $baseline;
+                    i{
+                        color:$color-headings;
+                        font-size: $base-font-size*1.2;
+                    }
+                }
+            }
+        }
+    }
+    hr{
+        display: block;
+        width: 85%;
+        margin: auto;
+        height: 1px;
+        background-color: $color-elements;
+        border: none;
+
+    }
+    .center{
+       padding-top: $padding-overall*0.4;
+        text-align: center;
+        color: $color-headings;
+        .copyright{
+            padding-bottom: $baseline;
+        }
+    }
+
+    
+    @media(max-width:1440px){
+
+        .flex{
+            padding: $margin-top-global*0.5 $margin-right-left*0.5;
+            .quotation{
+                flex-basis:35%;
+                p{
+                display: block;
+                width: 200px;
+                }
+            }
+            .adress{
+                flex-basis:30%;
+            }
+            .site{
+                flex-basis:15%;
+            }
+            .follow{
+                flex-basis:20%;
+            }
+        }
+    } 
+     
+    @media(max-width:1279px){
+
+        .flex{
+
+            .quotation{
+                flex-basis:30%;
+            }
+            .adress{
+                flex-basis:30%;
+            }
+            .site{
+                flex-basis:15%;
+            }
+            .follow{
+                flex-basis:25%;
+            }
+        }
+    }  
+    @media(max-width:991px){
+       
+        .flex{
+            padding: $margin-top-global*0.5 $margin-right-left*0.3;
+            .quotation{
+                flex-basis:25%;
+                p{
+                    width: 150px;
+                }
+            }
+            .adress{
+                flex-basis:30%;
+            }
+            .site{
+                flex-basis:20%;
+            }
+            .follow{
+                flex-basis:20%;
+                ul{
+                    margin: 0 auto;
+
+                    li{
+                        padding: 0 $baseline*0.5;
+                    }
+                }
+            }
+        }
+    } 
+    @media(max-width:768px){
+        div{
+            padding: $baseline*0.5 $baseline*0.2;
+           
+        }
+        .flex{
+            padding: $margin-top-global*0.5 $margin-right-left*0.2;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            h4{
+                padding-bottom: $baseline*0.5; 
+            }
+            .quotation{
+                flex-basis: auto;
+                p{
+                    width: initial;
+                 
+                }
+            }
+            .adress{
+                flex-basis: auto;
+            }
+            .site{
+                flex-basis: auto;
+            }
+            .follow{
+                flex-basis: auto;
+                text-align: center;
+                ul{
+                    margin: 0 auto;
+
+                    li{
+                        padding: 0 $baseline*0.5;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
