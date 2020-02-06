@@ -289,11 +289,14 @@ html {
                   animation-delay: 1.3s;
           -webkit-animation-fill-mode: forwards;
                   animation-fill-mode: forwards; }
-        html body .main .box-top button {
+        html body .main .box-top .button {
+          display: block;
           font-weight: 700;
           width: 170px;
           height: 60px;
+          margin: 0 auto;
           margin-top: 108px;
+          padding-top: 17px;
           font-family: "Cabin", sans-serif;
           border-radius: 5px;
           font-size: 19.2px;
@@ -301,11 +304,17 @@ html {
           background-color: #000000;
           border: none;
           -webkit-animation: Slide_Up 1.3s ease;
-                  animation: Slide_Up 1.3s ease; }
-          html body .main .box-top button a {
-            text-decoration: none;
-            color: #f8e078;
-            font-weight: 300; }
+                  animation: Slide_Up 1.3s ease;
+          text-decoration: none;
+          color: #f8e078;
+          font-weight: 300; }
+          html body .main .box-top .button:hover {
+            border: solid 2px #ccb96d;
+            color: #ccb96d;
+            padding-top: 15px; }
+          html body .main .box-top .button:focus {
+            color: #000000;
+            background: #ccb96d; }
         @media (min-width: 767px) and (max-width: 1279px) {
           html body .main .box-top button {
             font-size: 20.8px;

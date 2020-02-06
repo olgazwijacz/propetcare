@@ -94,12 +94,14 @@ body{
                     animation-fill-mode: forwards;
                 }
             }
-            button{
-              
+            .button{
+                display: block;
                 font-weight: 700;
                 width:170px;
                 height: 60px;
+                margin: 0 auto;
                 margin-top: $margin-top-global * 1.8;
+                padding-top: 17px ;
                 font-family: $font-secondary;
                 border-radius: 5px;
                 font-size: $base-font-size *1.2;
@@ -107,15 +109,19 @@ body{
                 background-color: $color-btn-bg;
                 border: none;
                 animation: Slide_Up 1.3s ease;
-                button:hover{
-                    border: solid 2px $color-btn-hover-primary;
-                    color: $color-btn-text-primary ;
-                }
-                a{ 
-                    text-decoration: none;
-                    color: $color-btn-text-primary;
-                    font-weight: 300;
-                }
+                text-decoration: none;
+                color: $color-btn-text-primary;
+                font-weight: 300;
+                &:hover {
+                    border: solid 2px rgb(204, 185, 109);;
+                    color: rgb(204, 185, 109);
+                    padding-top: 15px;
+                  }
+                
+                 &:focus {
+                    color: $color-basic;
+                    background: rgb(204, 185, 109);
+                  }
             }
                 @media (min-width: 767px) and (max-width: 1279px){
                     button{
@@ -177,7 +183,7 @@ body{
         @media(max-width:990px){
             .box-top{
                 padding-top: $margin-top-global*1.5;
-                margin-left:0;
+               
             }
         }
         @media (max-width:767px){

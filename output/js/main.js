@@ -104,7 +104,7 @@ eval("\r\n\r\n// ANIMATIONS\r\n\r\nconst img = document.querySelectorAll(\".img-
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"css/styles.styles.css\";\n\n//# sourceURL=webpack:///./scss/styles.scss?");
+eval("module.exports = __webpack_require__.p + \"css/styles.css\";\n\n//# sourceURL=webpack:///./scss/styles.scss?");
 
 /***/ }),
 
